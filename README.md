@@ -13,14 +13,14 @@ Learn to create digital designs and then get them fabricated on actual silicon u
 Create a new project using the template.  You need to be logged into Github.  You should see a green button in the 
 upper left.
 
-[use template](images/use_template.png)
+![use template](images/use_template.png)
 
 ### Step 2: updating settings for your project
 
 On the pages tab of your project settings, changes the Source from 'Deploy from a branch' to 'GitHub Actions'.
 This enables GitHub actions to run for your project which is required to generate the bitstream for the FPGA.
 
-[settings](/images/settings.png)
+![settings](/images/settings.png)
 
 ### Step 3: create your design
 
