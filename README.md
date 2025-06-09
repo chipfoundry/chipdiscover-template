@@ -8,30 +8,38 @@ Learn to create digital designs and then get them fabricated on actual silicon u
 
 ## Quick Start
 
-### Step 1: fork the repo
+### Step 1: create a project from using the Github template
 
-Fork this repository so you can make changes
+Create a new project using the template.  You need to be logged into Github.  You should see a green button in the 
+upper left.
 
-### Step 2: create your design
+[use template](images/use_template.png)
+
+### Step 2: updating settings for your project
+
+On the pages tab of your project settings, changes the Source from 'Deploy from a branch' to 'GitHub Actions'.
+This enables GitHub actions to run for your project which is required to generate the bitstream for the FPGA.
+
+[settings](/images/settings.png)
+
+### Step 3: create your design
 
 Use [wokwi](https://wokwi.com/) or Verilog to create a digital design.
 
-
-### Step 3: edit the info.yaml
+### Step 4: edit the info.yaml
 
 Edit the info.yaml file to specify all the fields.  Don't forget to set the *clock_hz* field to something appropriate for your design (pretty much anything between 10 and 40000000 Hz will be accepted).
 
-### Step 4: push the changes
+### Step 5: push the changes
 
 Commit your changes and push up to the repository.
 
-### Step 5: get the UF2
+### Step 6: get the UF2
 
 Github actions will run on each commit, and you can find them under the actions tab.
-![github action](images/actions_tab.png)
 
 Once the run is complete, click on the action and you'll find an `fpga_bitstream` zip file to download.
-![bitstream](images/bitstream_artifact.png)
+![bitstream](images/bitstream.png)
 
 Grab that, unzip it, and within you'll find the `tt_fpga.uf2` file.  Copy that UF2 to the **FPGAUPDATE** drive.  The project should start running a few seconds later.
 
