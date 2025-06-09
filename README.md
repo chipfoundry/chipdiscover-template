@@ -39,7 +39,7 @@ Grab that, unzip it, and within you'll find the `tt_fpga.uf2` file.  Copy that U
 
 The development boards will pop up the *FPGAUpdate* drive when they are plugged into USB.
 
-![fpga dev board](images/fpga_board.jpg)
+![chipdiscover](images/chipdiscover.jpg)
 
 These boards map well to Tiny Tapeout projects as they have:
 
